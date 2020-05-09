@@ -1,0 +1,48 @@
+
+#what .items {
+  display:block;
+  padding: 1rem;
+}
+/* align items to the left if screen is wider than 1100px */
+#what .item {
+  display:flex;
+  text-align: left;
+}
+
+/* align icons to the left if screen is wider than 1100px */
+#what .item i {
+margin-right:1.3rem;
+align-self:center;
+margin-bottom:0;
+}
+
+
+/* smart phones */
+@media(max-width: 500px) {
+  #main-nav {
+    flex-direction:column;
+    align-items: center;
+  }
+   
+  #main-nav .logo {
+    margin-bottom:0.5rem;
+    text-align: center;
+  }
+
+  #main-nav ul {
+   padding:0.5rem;
+  }
+
+  #who {
+    display:block;
+  }
+
+  
+#who .who-img {
+  display:none;
+}
+
+#contact {
+ flex-direction:column;
+}
+}
